@@ -66,12 +66,23 @@ public class No3 {
         System.out.println();
 
 
-        // '큰' 수들 reverse 출력
+        // '큰' 수들 reverse 출력 (값도 reverse, 순서도 reverse)
         System.out.println("< REVERSE >");
-        for (int j = biggerArr.length - 1; j >= 0; j--) {
-            int reverseValue = biggerArr[j] % 10 * 10 + biggerArr[j] / 10; //reverse 하는 작업
-            System.out.printf("%d ", reverseValue); // reverse한 값들 출력
+        for (int j = biggerArr.length - 1; j >= 0; j--) { // 순서 reverse
+            int reverseValue = 0;
+            while (true) { // 값 reverse
+                reverseValue += biggerArr[j] % 10;
+                biggerArr[j] /= 10;
+
+                if (biggerArr[j] == 0) {
+                    System.out.print(reverseValue + " ");
+                    break;
+                } else {
+                    reverseValue *= 10;
+                }
+            }
         }
     }
 }
 
+// 바뀌나?

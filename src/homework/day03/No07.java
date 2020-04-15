@@ -14,7 +14,7 @@ package homework.day03;
 
 import java.util.Scanner;
 
-public class No7 {
+public class No07 {
     public static void main(String[] args) {
 
         for (int i = 2; i <= 9; i++) { // 2- 9 단

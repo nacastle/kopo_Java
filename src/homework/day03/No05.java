@@ -1,6 +1,6 @@
 package homework.day03;
 
-public class No5 {
+public class No05 {
     public static void main(String[] args) {
 
         int height = 0; // 달팽이가 올라온 높이

@@ -13,7 +13,7 @@ package homework.day03;
         }
 */
 
-public class No9 {
+public class No09 {
 
     public static void main(String[] args) {
 

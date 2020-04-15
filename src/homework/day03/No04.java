@@ -4,7 +4,7 @@ package homework.day03;
 import java.util.Random;
 import java.util.Scanner;
 
-public class No4 {
+public class No04 {
     public static void main(String[] args) {
 
         // 수정했습니다!

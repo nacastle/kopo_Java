@@ -15,7 +15,7 @@ package homework.day03;
 
 import java.util.Scanner;
 
-public class No9_2 {
+public class No09_2 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

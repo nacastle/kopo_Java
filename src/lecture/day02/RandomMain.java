@@ -1,4 +1,4 @@
-package kr.ac.kopo.day02;
+package lecture.day02;
 
 import java.util.Random;
 import java.util.Scanner;

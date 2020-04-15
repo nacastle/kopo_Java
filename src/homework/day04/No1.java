@@ -1,4 +1,4 @@
-package day04;
+package homework.day04;
 /*
 1.
 10개의 정수를 입력받아 다음과 같이 출력하는 코드를 작성하시오.

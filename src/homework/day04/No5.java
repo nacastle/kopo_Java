@@ -1,4 +1,4 @@
-package day04;
+package homework.day04;
 /*
 5.
 2 ~ 100사이의 소수를 출력하는 코드를 작성

@@ -1,4 +1,4 @@
-package day04;
+package homework.day04;
 /*
 2.
 5개의 짝수를 입력받아 출력하는 코드를 작성

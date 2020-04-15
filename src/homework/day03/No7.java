@@ -1,4 +1,16 @@
-package day03;
+package homework.day03;
+/*
+7.
+구구단을 출력하세요
+        *** 2단 ***
+        2 * 1 = 2
+        ...
+        2 * 9 = 18
+
+        *** 3단 ***
+        ...
+        9 * 9 = 81
+*/
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package kr.ac.kopo.day03;
+package lecture.day03;
 
 /* 중첩 반복문
  * 

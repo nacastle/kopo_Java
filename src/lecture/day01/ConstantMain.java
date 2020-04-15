@@ -1,4 +1,4 @@
-package kr.ac.kopo.day01;
+package lecture.day01;
 
 public class ConstantMain {
 

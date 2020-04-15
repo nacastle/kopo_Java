@@ -1,4 +1,4 @@
-package day04;
+package homework.day04;
 /*
 4.
 다음의 결과를 보이는 프로그램을 작성하시오.

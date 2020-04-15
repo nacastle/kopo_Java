@@ -1,4 +1,4 @@
-package day03;
+package homework.day03;
 
 public class No5 {
     public static void main(String[] args) {

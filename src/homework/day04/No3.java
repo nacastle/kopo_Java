@@ -1,4 +1,4 @@
-package day04;
+package homework.day04;
 /*
 3.
 다음의 결과를 보이는 코드를 작성하시오
@@ -13,12 +13,11 @@ package day04;
         10, 12, 36보다 큰수가 와야합니다
         4번째 정수 : 40
         5번째 정수 : 67
-
         < PRINT >
         10 12 36 40 67
-
         < REVERSE >
-        76 4 63 21 1*/
+        76 4 63 21 1
+        */
 
 import java.util.Scanner;
 
@@ -45,10 +44,15 @@ public class No3 {
                     i += 1;
                     cnt += 1;
                 } else {
-                    for (int j = 1; j <= i; j++) {
-                        System.out.printf("%d, ", biggerArr[j - 1]);
+                    for (int j = 1; j <= i + 1; j++) {
+                        if (j < i) {
+                            System.out.printf("%d, ", biggerArr[j - 1]);
+                        } else if (j == i) {
+                            System.out.printf("%d", biggerArr[j - 1]);
+                        } else {
+                            System.out.println("보다 큰 수가 와야합니다.");
+                        }
                     }
-                    System.out.println("보다 큰 수가 와야합니다.");
                 }
             }
         }
@@ -64,9 +68,10 @@ public class No3 {
 
         // '큰' 수들 reverse 출력
         System.out.println("< REVERSE >");
-        for (int j = biggerArr.length-1; j >= 0; j--) {
-            int reverseValue = biggerArr[j]%10*10 + biggerArr[j]/10; //reverse 하는 작업
+        for (int j = biggerArr.length - 1; j >= 0; j--) {
+            int reverseValue = biggerArr[j] % 10 * 10 + biggerArr[j] / 10; //reverse 하는 작업
             System.out.printf("%d ", reverseValue); // reverse한 값들 출력
         }
     }
 }
+

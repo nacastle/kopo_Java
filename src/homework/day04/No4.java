@@ -30,8 +30,8 @@ public class No4 {
         // 배열에 n의 약수 담기
         for (int i = 1; i <= n; i++) {
             if (n % i == 0) {
-                yaksuNums[j] = i;
-                j += 1; // i가 n의 약수이면 nums 배열에 담고
+                yaksuNums[j] = i; // i가 n의 약수이면 nums 배열에 담고
+                j += 1;
                 cnt += 1;
             }
             // 아니면 담지 않는다

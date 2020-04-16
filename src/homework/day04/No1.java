@@ -41,7 +41,7 @@ public class No1 {
         int evenSum = 0; // 짝수의 합을 담을 변수
         for (int i = 0; i < arr.length; i++) {
 
-            if (arr[i] % 2 == 0 && arr[i] > 0) { // 짝수인지 검증
+            if (arr[i] > 0 && arr[i] % 2 == 0) { // 짝수인지 검증
                 System.out.printf("%-3d", arr[i]); //짝수면 출력
                 evenSum += arr[i];
             }
@@ -55,7 +55,7 @@ public class No1 {
         int oddSum = 0; // 홀수의 합을 담을 변수
         for (int i = 0; i < arr.length; i++) {
 
-            if (arr[i] % 2 == 1 && arr[i] > 0) { //홀수인지 검증
+            if (arr[i] > 0 && arr[i] % 2 == 1) { //홀수인지 검증
                 System.out.printf("%-3d", arr[i]); //홀수면 출력
                 oddSum += arr[i];
             }

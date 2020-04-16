@@ -25,7 +25,7 @@ public class No3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int[] biggerArr = new int[5]; // 5개의 정수를 담을 배열 생성
+        int[] biggerArr = new int[5]; // 5개의 '큰' 정수를 담을 배열 생성
         int i = 0; // 몇번째 '큰' 정수 입력인지 & evenArr 배열의 index를 가리킴
         int cnt = 0; // 배열에 짝수가 몇 개 담겼는지 확인
 
@@ -34,7 +34,7 @@ public class No3 {
             System.out.printf("%d번째 정수 : ", i + 1);
             int input = sc.nextInt();
 
-            if (i + 1 == 1) {
+            if (i + 1 == 1) { // 첫번째 요소 설정 (첫번째 껀 규칙 해당사항 안되므로)
                 biggerArr[i] = input;
                 i += 1;
                 cnt += 1;
@@ -48,7 +48,7 @@ public class No3 {
                         if (j < i) {
                             System.out.printf("%d, ", biggerArr[j - 1]);
                         } else if (j == i) {
-                            System.out.printf("%d", biggerArr[j - 1]);
+                            System.out.printf("%d", biggerArr[j - 1]); // 마지막 숫자는 쉼표 안 찍음
                         } else {
                             System.out.println("보다 큰 수가 와야합니다.");
                         }
@@ -85,4 +85,3 @@ public class No3 {
     }
 }
 
-// 바뀌나?

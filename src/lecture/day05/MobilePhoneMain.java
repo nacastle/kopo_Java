@@ -25,7 +25,9 @@ public class MobilePhoneMain {
 
 
         // 반복문으로 출력하기
-        MobilePhone[] mpArr = {mp, mp2, mp3};
+        MobilePhone[] mpArr;
+        mpArr = new MobilePhone[]{mp, mp2, mp3};
+
         for (int i = 0; i < mpArr.length; i++) {
             System.out.println("사용자명 : " + mpArr[i].name + "번호 : " + mpArr[i].number + "제조사 : " + mpArr[i].company);
         }

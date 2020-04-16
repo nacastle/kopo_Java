@@ -36,6 +36,11 @@ public class No1 {
             arr[i] = sc.nextInt();
         }
 
+        /*
+                조건의 순서가 바뀌는 것이 더 좋을 거 같아요... 짝홀은 양수일때만 의미가 있으니깐요
+                --> 수정했습니다!
+         */
+
         //짝수와 짝수의 합 출력
         System.out.println("< 짝수 >");
         int evenSum = 0; // 짝수의 합을 담을 변수

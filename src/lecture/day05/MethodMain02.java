@@ -23,9 +23,22 @@ public class MethodMain02 { //피호출자 메소드... 호출자 메소드의 �
             System.out.print(a);
         }
         System.out.println();
+        return; // 빈 몸으로 반환할 때 (void)
+    }
+
+    static int factorial(int n) { // 리턴값이 있는 경우...void가 아닌 return의 자료형을 담아야 (int)
+        int result = 1; // 곱셈이니까 0으로 선언하면 안됨
+        for (int i = n; i >= 1; i--) {
+            result = result * i;
+        }
+        return result; //피호출자가 호출자에게 전달할 값
     }
 
     public static void main(String[] args) { //호출자 메소드
+
+
+        int r = factorial(3);
+        System.out.println("3! ==> " + r);
 
         printStar('!',10);
         System.out.println("Hello");

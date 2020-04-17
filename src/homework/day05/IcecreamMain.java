@@ -28,31 +28,32 @@ import java.util.Scanner;
 public class IcecreamMain {
     public static void main(String[] args) {
 
-        // 교수님 이번 과제는 제가 주석에 쓴 용어나 표현들이 올바른지 확인해주시면 감사하겠습니다!
+        // 수정했습니다!
 
-        // 배열의 객체화 -> 배열 내 요소들의 객체화
+
+        // 객체 배열 생성 -> 배열 내 인스턴스 객체들 생성
 
         Scanner sc = new Scanner(System.in);
 
         System.out.print("아이스크림을 몇개 구입할래? ");
         int n = sc.nextInt();
+        sc.nextLine();
         System.out.println();
 
-        Icecream[] iceArr = new Icecream[n]; // No1_Icecream 클래스를 활용해 배열 형태의 iceArr 객체(인스턴스 객체) 생성
+        Icecream[] iceArr = new Icecream[n]; // Icecream 클래스's 인스턴스 객체의 주소를 기억하기위한 객체 배열 생성
 
         for (int i = 0; i < n; i++) {
 
-            iceArr[i] = new Icecream(); // iceeArr 배열 내 각 요소의 인스턴스 객체화
+            iceArr[i] = new Icecream(); // 인스턴스 객체 생성
 
             System.out.println("*** " + (i + 1) + "번째 아이스크림 구매정보 ***");
             System.out.print("아이스크림명 : ");
-//            iceArr[i].name = sc.nextLine();
-//            질문: 48번 라인처럼 코드 짜면 콘솔창에서 입력하기도 전에 다음 입력으로 넘어가는데 왜 그러는지 잘 모르겠습니다...
-            iceArr[i].name = sc.next(); // next()를 사용했을때만 잘 돌아갑니다... 하지만 띄어쓰기를 입력할 수 없다는 문제점이 있죠 ㅠ
+            iceArr[i].name = sc.nextLine();
+            sc.nextLine();
 
             System.out.print("아이스크림가격 : ");
             iceArr[i].price = sc.nextInt();
- //           sc.nextLine();
+            sc.nextLine();
 
             System.out.println();
         }
@@ -60,13 +61,11 @@ public class IcecreamMain {
         System.out.println("< 총 " + n + "개의 아이스크림 구매정보 출력 >");
         for (int i = 0; i <= n; i++) {
             if (i == 0) {
-                System.out.printf("%-5s %-10s %-10s\n", "번호", "아이스크림명", "아이스크림가격");
+                System.out.printf("%7s%15s%15s\n", "번호", "아이스크림명", "아이스크림가격");
             } else {
-                System.out.printf("%-7d %-15s %-10d\n", i, iceArr[i - 1].name, iceArr[i - 1].price);
+                System.out.printf("%7d%15s%15d\n", i, iceArr[i - 1].name, iceArr[i - 1].price);
             }
         }
 
     }
-
-
 }

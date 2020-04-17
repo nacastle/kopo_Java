@@ -1,4 +1,4 @@
-/*
+/* 실패작
 package homework.day05;
 
 */

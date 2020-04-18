@@ -13,10 +13,17 @@ package homework.day06Class;
 import java.util.Scanner;
 
 public class Calculator {
+    /*
+    입출력까지 메소드로 구현해주는 방식과, 구현해주지 않는 방식을 모두 코딩해보니,
+    입출력까지 메소드로 구현해주면 대체로 멤버변수가 필요하고,
+    구현해주지 않으면 멤버변수가 필요없이 매개변수로만 메소드를 구현해줄 수 있다는 것을 느낄 수 있었다.
+    Caculator, IceCream은 입출력 메소드 구현 / StringUtil은 입출력 메소드 구현 x
+    */
 
     int x1, x2;
 
 
+    // 입력 메소드
     void numInput() {
         Scanner sc = new Scanner(System.in);
         System.out.print("정수 : ");
@@ -25,6 +32,7 @@ public class Calculator {
         this.x2 = sc.nextInt();
     }
 
+    // 덧셈 메소드
     int addFunction() {
 
         int sum = 0;
@@ -33,6 +41,7 @@ public class Calculator {
         return sum;
     }
 
+    // 뺄셈 메소드
     int minusFunction() {
 
         int minus = 0;
@@ -41,6 +50,7 @@ public class Calculator {
         return minus;
     }
 
+    // 곱셈 메소드
     int multiplyFunction() {
 
         int multiply = 0;
@@ -49,6 +59,7 @@ public class Calculator {
         return multiply;
     }
 
+    // 나눗셈 메소드
     double divideFunction() {
 
         double divide = 0;
@@ -57,17 +68,8 @@ public class Calculator {
         return divide;
     }
 
-    void printResult() {
-        System.out.printf("%d + %d = %d\n", this.x1, this.x2, addFunction());
-        System.out.printf("%d - %d = %d\n", this.x1, this.x2, minusFunction());
-        System.out.printf("%d * %d = %d\n", this.x1, this.x2, multiplyFunction());
-        System.out.printf("%d / %d = %.1f\n", this.x1, this.x2, divideFunction());
-        System.out.printf("%d 소수체크 : %b\n", this.x1, sosuJudge1());
-        System.out.printf("%d 소수체크 : %b\n", this.x2, sosuJudge2());
-
-    }
-
-    boolean sosuJudge1() {
+    // 소수 판단 메소드 1
+    boolean isSosu() {
 
         int cnt = 0;
         for (int i = 1; i <= this.x1; i++) {
@@ -81,6 +83,7 @@ public class Calculator {
         return false;
     }
 
+    // 소수 판단 메소드 2
     boolean sosuJudge2() {
 
         int cnt = 0;
@@ -94,6 +97,21 @@ public class Calculator {
         }
         return false;
     }
+
+    // 값 출력 메소드
+    void printResult() {
+        System.out.printf("%d + %d = %d\n", this.x1, this.x2, addFunction());
+        System.out.printf("%d - %d = %d\n", this.x1, this.x2, minusFunction());
+        System.out.printf("%d * %d = %d\n", this.x1, this.x2, multiplyFunction());
+        System.out.printf("%d / %d = %.1f\n", this.x1, this.x2, divideFunction());
+        System.out.printf("%d 소수체크 : %b\n", this.x1, isSosu());
+        System.out.printf("%d 소수체크 : %b\n", this.x2, sosuJudge2());
+
+    }
+
+
+
+
 
 
 

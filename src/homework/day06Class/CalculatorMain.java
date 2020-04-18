@@ -17,10 +17,12 @@ public class CalculatorMain {
         Calculator cal = new Calculator();
 
         cal.numInput();
+/*  printResult 메소드를 만들어 넣어주었기 때문에 메인 메소드에서 아래 메소드들을 딱히 실행시킬 필요가 없었다.
         cal.addFunction();
         cal.minusFunction();
         cal.multiplyFunction();
         cal.divideFunction();
+*/
 
         cal.printResult();
 

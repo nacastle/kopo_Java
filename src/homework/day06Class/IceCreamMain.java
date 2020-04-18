@@ -50,6 +50,7 @@ public class IceCreamMain {
             ice.priceInput();
             iceArr[i].price = ice.price;
         }*/
+
         System.out.println();
 
         ice.titleOutput(ice.n);

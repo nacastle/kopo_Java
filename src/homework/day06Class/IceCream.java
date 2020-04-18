@@ -37,18 +37,35 @@ public class IceCream {
     int price;
     int n;
 
-
-
-
-
-
+    // 몇 개 구입할건지 메소드
     void howManyInput() {
         Scanner sc = new Scanner(System.in);
         System.out.print("아이스크림 몇 개 구입할래? : ");
         this.n = sc.nextInt();
     }
 
+    // 타이틀을 출력하는 메소드
+    void titleInput(int i) {
+        System.out.printf("*** %d번째 아이스크림 구매정보 ***\n",i+1);
+    }
 
+    // 아이스크림명을 입력하는 메소드
+    void nameInput() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("아이스크림명 : ");
+        this.name = sc.nextLine();
+//        sc.nextLine();
+    }
+
+    // 아이스크림 가격을 입력하는 메소드
+    void priceInput() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("아이스크림가격 : ");
+        this.price = sc.nextInt();
+//        sc.nextLine();
+    }
+
+    // 아이스크림명, 아이스크림 가격을 배열 단위로 입력하는 메소드
     void infoInput(IceCream[] iceArr) {
 
         for (int i = 0; i < this.n; i++) {
@@ -62,30 +79,13 @@ public class IceCream {
     }
 
 
-    void titleInput(int i) {
-        System.out.printf("*** %d번째 아이스크림 구매정보 ***\n",i+1);
-    }
-
-    void nameInput() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("아이스크림명 : ");
-        this.name = sc.nextLine();
-//        sc.nextLine();
-    }
-
-    void priceInput() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("아이스크림가격 : ");
-        this.price = sc.nextInt();
-//        sc.nextLine();
-    }
-
-
+    // 타이틀을 출력하는 메소드
     void titleOutput(int n) {
         System.out.printf("< 총 %d개의 아이스크림 구매정보 출력 >\n", n);
         System.out.printf("%-5s %-15s %-15s", "번호", "아이스크림명", "아이스크림가격");
     }
 
+    // 종합 구매정보를 배열 단위로 출력하는 메소드
     void infoOutput(IceCream[] iceArr) {
 
         for (int i = 1; i <= this.n; i++) {

@@ -28,7 +28,7 @@ import java.util.Scanner;
 public class IcecreamMain {
     public static void main(String[] args) {
 
-        // 수정했습니다!
+        // 수정했습니다.
 
 
         // 객체 배열 생성 -> 배열 내 인스턴스 객체들 생성

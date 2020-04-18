@@ -1,7 +1,5 @@
-/* 실패작
-package homework.day05;
+package homework.day05Class;
 
-*/
 /*
 1. 다음의 결과를 보이는 프로그램을 작성하시오.
         아이스크림을 몇개 구입할래? 3 (입력)
@@ -23,51 +21,51 @@ package homework.day05;
         1 메로나 1000
         2 월드콘 2000
         3 비비빅 800
-*//*
+*/
 
+import java.util.Scanner;
 
-
-        import java.util.Scanner;
-
-public class No1_IcecreamMain {
+public class IcecreamMain {
     public static void main(String[] args) {
+
+        // 수정했습니다.
+
+
+        // 객체 배열 생성 -> 배열 내 인스턴스 객체들 생성
+
         Scanner sc = new Scanner(System.in);
-        No1_Icecream ice = new No1_Icecream();
 
         System.out.print("아이스크림을 몇개 구입할래? ");
         int n = sc.nextInt();
+        sc.nextLine();
         System.out.println();
 
-        String[] name = new String[n];
-        int[] price = new int[n];
+        Icecream[] iceArr = new Icecream[n]; // Icecream 클래스's 인스턴스 객체의 주소를 기억하기위한 객체 배열 생성
 
-        for (int i = 1; i <= n; i++) {
+        for (int i = 0; i < n; i++) {
 
-            System.out.println("*** " + i+"번째 아이스크림 구매정보 ***");
+            iceArr[i] = new Icecream(); // 인스턴스 객체 생성
 
+            System.out.println("*** " + (i + 1) + "번째 아이스크림 구매정보 ***");
             System.out.print("아이스크림명 : ");
-            ice.name = sc.next();
-            name[i-1] = ice.name;
+            iceArr[i].name = sc.nextLine();
+            sc.nextLine();
 
             System.out.print("아이스크림가격 : ");
-            ice.price = sc.nextInt();
+            iceArr[i].price = sc.nextInt();
             sc.nextLine();
-            price[i-1] = ice.price;
 
             System.out.println();
         }
 
-
         System.out.println("< 총 " + n + "개의 아이스크림 구매정보 출력 >");
         for (int i = 0; i <= n; i++) {
             if (i == 0) {
-                System.out.printf("%-5s %-10s %-10s\n","번호", "아이스크림명", "아이스크림가격");
+                System.out.printf("%7s%15s%15s\n", "번호", "아이스크림명", "아이스크림가격");
             } else {
-                System.out.printf("%-7d %-15s %-10d\n", i, name[i-1], price[i-1]);
+                System.out.printf("%7d%15s%15d\n", i, iceArr[i - 1].name, iceArr[i - 1].price);
             }
         }
 
     }
 }
-
-*/

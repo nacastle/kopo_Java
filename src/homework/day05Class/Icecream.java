@@ -1,4 +1,4 @@
-package homework.day05;
+package homework.day05Class;
 
 public class Icecream {
     String name; // 아이스크림명

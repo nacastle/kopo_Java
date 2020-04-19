@@ -33,9 +33,9 @@ import java.util.Scanner;
 public class IceCream {
 
 //    IceCream[] iceArr; // 언제쓰이지?
-    String name;
-    int price;
-    int n;
+    String name; // 아이스크림명
+    int price; // 아이스크림 가격
+    int n; // 아이스크림 몇 개?
 
     // 몇 개 구입할건지 메소드
     void howManyInput() {

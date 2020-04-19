@@ -25,14 +25,24 @@ public class StringUtil {
 
     }*/
 
-    // 대문자인지 판별하는 메소드
+    // 대문자 구분법 2
     boolean isUpperChar(char c) {
+
+        if (c >= 'A' &&  c <= 'Z') {
+            return true;
+
+        } else {
+            return false;
+        }
+
+/*  대문자 구분법 1
         for (char ch = 'A'; ch <= 'Z'; ch++) {
             if (c == ch) {
                 return true;
             }
         }
         return false;  // return에 대한 공부 필요
+*/
     }
 
     // 소문자인지 판별하는 메소드

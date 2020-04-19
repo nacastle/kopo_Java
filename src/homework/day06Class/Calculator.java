@@ -16,7 +16,7 @@ public class Calculator {
     /*
     입출력까지 메소드로 구현해주는 방식과, 구현해주지 않는 방식을 모두 코딩해보니,
     입출력까지 메소드로 구현해주면 대체로 멤버변수가 필요하고,
-    구현해주지 않으면 멤버변수가 필요없이 매개변수로만 메소드를 구현해줄 수 있다는 것을 느낄 수 있었다.
+    구현해주지 않으면 멤버변수가 필요없이 매개변수로만 메소드를 구현해줄 수 있다는 것을 느꼈다.
     Caculator, IceCream은 입출력 메소드 구현 / StringUtil은 입출력 메소드 구현 x
     */
 
@@ -44,10 +44,10 @@ public class Calculator {
     // 뺄셈 메소드
     int minusFunction() {
 
-        int minus = 0;
-        minus = this.x1 - this.x2;
+//        int minus = 0;
+//        minus = this.x1 - this.x2;
 
-        return minus;
+        return this.x1 - this.x2;
     }
 
     // 곱셈 메소드
@@ -71,6 +71,16 @@ public class Calculator {
     // 소수 판단 메소드 1
     boolean isSosu() {
 
+        // 소수 구분 방법 2
+        for (int i = 2; i < this.x1; i++) {
+            if (x1 % i == 0) {
+                return false;
+            }
+        }
+        return true;
+
+
+/*  소수 구분 방법 1
         int cnt = 0;
         for (int i = 1; i <= this.x1; i++) {
             if (this.x1 % i == 0) {
@@ -81,11 +91,20 @@ public class Calculator {
             return true;
         }
         return false;
+*/
     }
 
     // 소수 판단 메소드 2
     boolean sosuJudge2() {
 
+        for (int i = 2; i < this.x2; i++) {
+            if (x2 % i == 0) {
+                return false;
+            }
+        }
+        return true;
+
+/*
         int cnt = 0;
         for (int i = 1; i <= this.x2; i++) {
             if (this.x2 % i == 0) {
@@ -96,6 +115,7 @@ public class Calculator {
             return true;
         }
         return false;
+*/
     }
 
     // 값 출력 메소드

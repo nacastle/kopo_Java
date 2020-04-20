@@ -1,4 +1,4 @@
-package homework.day06Class;
+package homework.day06Class.Practice;
 
 public class Practice {
 

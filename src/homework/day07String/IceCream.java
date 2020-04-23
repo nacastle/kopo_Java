@@ -7,6 +7,7 @@ public class IceCream {
 
     private String name; // 아이스크림명
     private int price; // 아이스크림 가격
+    int sth;
 
     IceCream(String name, int price) {
 
@@ -16,21 +17,12 @@ public class IceCream {
     }
 
     public String getName () {  // 멤버변수가 private이기 때문에 변수를 pulic 해주는 메소드 필요
-        return name;
+        return this.name;
     }
 
     public int getPrice () {  // 멤버변수가 private이기 때문에 변수를 pulic 해주는 메소드 필요
         return price;
     }
-
-
-
-
-
-
-
-
-
 
 
 }

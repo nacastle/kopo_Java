@@ -1,0 +1,10 @@
+@startuml
+
+class LottoException {
+int a
+}
+
+class A {
+int b
+}
+@enduml

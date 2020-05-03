@@ -24,9 +24,14 @@ public class ExceptionMain05 {
         FileReader fr = new FileReader("a.txt");
     }
 
-    public static void main(String[] args) /* throws Exception */ {
+    public static void main(String[] args)  /*throws Exception*/  {
 
         System.out.println("main start...");
+
+/*
+        a();
+        b();
+*/
         try {
             a();
         } catch(NullPointerException ne) {

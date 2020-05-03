@@ -33,11 +33,14 @@ public class LottoExecute {
             for (int i = 0; i < 6; i++) {
                 System.out.print(lottoNums[i] + " ");
             }
+//           int[] lottoNums = {1, 2, 3, 4, 5, 6, 7}; // 이거는 보초법때문에 배열크기를 8로 해주었기에 배열크기 7인 배열로 테스트는 불가능...그래서 직접 난수로 이루어진 배열로 테스트를 해봐야...
+
             System.out.println();
             System.out.printf("금주의 보너스 번호는 %d입니다.", lottoNums[6]);
 
             System.out.println();
             System.out.println();
+
 
             // 보너스 번호를 맞췄는지 여부 확인
             BonusWin bw = new BonusWin();

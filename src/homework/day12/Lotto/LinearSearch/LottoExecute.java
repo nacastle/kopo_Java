@@ -26,7 +26,7 @@ public class LottoExecute {
             }
 
             System.out.println();
-            System.out.println();
+
 
             // 6개 번호 추첨하고, 마지막 보너스 번호 하나 추첨하기 (총 7개 번호)
             LottoNum l = new LottoNum();
@@ -34,11 +34,13 @@ public class LottoExecute {
             for (int i = 0; i < 6; i++) {
                 System.out.print(lottoNums[i] + " ");
             }
+//            int[] lottoNums = {1, 2, 3, 4, 5, 6, 7}; // 상금 주는 코드가 잘 짜였는지 확인...
             System.out.println();
             System.out.printf("금주의 보너스 번호는 %d입니다.", lottoNums[6]);
 
             System.out.println();
             System.out.println();
+
 
             // 보너스 번호를 맞췄는지 여부 확인
             BonusWin bw = new BonusWin();

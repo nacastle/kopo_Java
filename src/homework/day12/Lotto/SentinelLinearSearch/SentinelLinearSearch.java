@@ -8,13 +8,13 @@ public class SentinelLinearSearch {
 
     private boolean searchResult;
 
-    public boolean sentinelLinearSearch(int[] lottoNums, int num, int usernum) { // lottoNums: 검색할 배열, num: 검색할 배열 길이 +1(보초가 위치할 인덱스), usernum: 검색할 숫자
+    public boolean sentinelLinearSearch(int[] lottoNums, int num, int userNum) { // lottoNums: 검색할 배열, num: 검색할 배열 길이 +1(보초가 위치할 인덱스), userNum: 검색할 숫자
 
         int i = 0;
-        lottoNums[num] = usernum;
+        lottoNums[num] = userNum;
 
         while (true) {
-            if (lottoNums[i] == usernum)
+            if (lottoNums[i] == userNum)
                 break;
             i += 1;
         }

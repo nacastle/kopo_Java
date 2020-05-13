@@ -5,9 +5,8 @@ import java.util.Stack;
 
 public class StackUtil {
 
-    public void stackInput(String msg, Stack<String> st, Scanner sc) {
-        System.out.println(msg);
-        st.push(sc.nextLine());
+    public void stackInput(Stack<String> st, String str) {
+        st.push(str);
     }
 
     public void stackDelete(String msg, Stack<String> st) {
@@ -33,11 +32,8 @@ public class StackUtil {
         }
     }
 
-    public void searchString(String msg, Stack<String> myStack, Scanner sc) {
+    public void searchString(Stack<String> myStack, String str2) {
 
-        System.out.println("찾을 문자열을 입력하세요.");
-        String wantedString = sc.nextLine();
-        System.out.println(msg);
-        System.out.println("A. "+(myStack.search(wantedString)) + "번");
+        System.out.println("A. "+(myStack.search(str2)) + "번");
     }
 }

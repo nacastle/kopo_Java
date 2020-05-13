@@ -32,6 +32,7 @@ public class CVSMain {
         Scanner sc = new Scanner(System.in);
         CVSManagement cm = new CVSManagement();
         Queue<String> qu = new LinkedList<>();
+        Milk mk = new Milk();
 
         System.out.println("=====편의점 내 우유 재고관리 시작====================");
 
@@ -49,9 +50,13 @@ public class CVSMain {
             sc.nextLine();
 
             if (n == 1) {
-                cm.receiveMilk("[금일 입고된 새로운 우유 정보]", qu, sc);
+                System.out.println("[금일 입고된 새로운 우유 정보]");
+                System.out.println("(입고된 일자를 입력하세요.)");
+                mk.setMilk(sc.nextLine());
+                cm.receiveMilk(qu, mk.getMilk());
             } else if (n == 2) {
-                cm.justSoldMilk("[방금 팔린 우유 정보]", qu);
+                System.out.println("[방금 팔린 우유 정보]");
+                cm.justSoldMilk(qu);
             } else if (n == 3) {
                 cm.nextSellMilk("[가장 먼저 팔려야 하는 우유]", qu);
             } else if (n == 4) {

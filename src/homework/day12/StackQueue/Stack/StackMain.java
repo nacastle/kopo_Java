@@ -37,17 +37,23 @@ public class StackMain {
             int selectNum = sc.nextInt(); // 정수 외의 타입형을 입력했을때 예외처리 해주는거 한번 해보기
             sc.nextLine();
             if (selectNum == 1) {
-                su.stackInput("Stack에 넣을 문자열을 입력하세요.", myStack, sc);
+                System.out.println("Stack에 넣을 문자열을 입력하세요.");
+                String str = sc.nextLine();
+                su.stackInput(myStack,str);
             } else if (selectNum == 2) {
                 su.stackDelete("Stack의 마지막 문자열을 삭제합니다.", myStack);
             } else if (selectNum == 3) {
+                System.out.println("Stack 내 모든 데이터를 출력합니다.");
                 su.showStackData(myStack);
             } else if (selectNum == 4) {
                 su.showLastData("가장 마지막 데이터를 출력합니다.", myStack);
             } else if (selectNum == 5) {
                 su.isStackEmpty("Q. Stack이 비어있습니까? ",myStack);
             } else if (selectNum == 6) { // search 메소드는 LinkedList에서는 활용할 수 없었다...그래서 Stack클래스로 다시 코드를 구현해보았다.
-                su.searchString("Q. 해당 문자열을 찾기 위해서는 뒤로가기를 몇 번 눌러야 합니까?",myStack,sc); // 웹사이트에서 뒤로가기 느낌으로...
+                System.out.println("찾고 싶은 문자열");
+                String str2 = sc.nextLine();
+                System.out.println("Q. 해당 문자열을 찾기 위해 뒤로가기를 몇 번해야 합니까?");
+                su.searchString(myStack,str2); // 웹사이트에서 뒤로가기 느낌으로...
             } else if (selectNum == 7) {
                 break;
             } else {

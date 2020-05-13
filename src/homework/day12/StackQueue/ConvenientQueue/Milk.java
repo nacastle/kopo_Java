@@ -16,6 +16,6 @@ public class Milk {
     }
 
     public void setMilk(String milk) {
-        this.milk = milk;
+        this.milk = milk + "에 입고된 우유";
     }
 }

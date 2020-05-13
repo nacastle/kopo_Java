@@ -1,18 +1,15 @@
 package homework.day12.StackQueue.ConvenientQueue;
 
 import java.util.Queue;
-import java.util.Scanner;
 
 public class CVSManagement {
 
 
-    public void receiveMilk(String msg, Queue<String> qu, Scanner sc) {
-        System.out.println(msg);
-        qu.add(sc.nextLine());
+    public void receiveMilk(Queue<String> qu, String milk) {
+        qu.add(milk);
     }
 
-    public void justSoldMilk(String msg, Queue<String> qu) {
-        System.out.println(msg);
+    public void justSoldMilk(Queue<String> qu) {
         System.out.println(qu.poll());
     }
 

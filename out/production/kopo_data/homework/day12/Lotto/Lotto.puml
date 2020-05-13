@@ -4,7 +4,11 @@ class LottoException {
 int a
 }
 
+LottoException --A
+
 class A {
 int b
+int c
+class()
 }
 @enduml

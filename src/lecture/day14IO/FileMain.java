@@ -8,7 +8,7 @@ public class FileMain {
 
     public static void main(String[] args) {
 
-        /*
+
         File fileobj = new File("iotest\\aaa.txt"); //경로 안 써주면 java폴더(IdeaProjects) 내에 있는 파일을 말한다.
 //        File fileobj = new File("C:\\Users\\HP\\IdeaProjects\\kopo\\iotest\\aaa.txt"); //경로 안 써주면 java폴더(IdeaProjects) 내에 있는 파일을 말한다.
 
@@ -39,10 +39,11 @@ public class FileMain {
         boolean bool4 = fileobj.canRead();
         System.out.println(bool4 ? "읽기 가능" : "읽기 불가능");
 
-*/
+
         File dirObj = new File("iotest");
 
-        boolean bool = dirObj.exists();
+//        boolean bool = dirObj.exists();
+
         System.out.println(bool? "유효한 디렉토리" : "디렉토리 없음");
 
         String[] list = dirObj.list();
@@ -61,7 +62,7 @@ public class FileMain {
         System.out.println(newDirObj.mkdirs() ? "dir 생성 성공" : "dir 생성 실패");
 
 //        newDirObj = new File("iotest");
-        boolean bool4 = newDirObj.delete();
+//        boolean bool4 = newDirObj.delete();
         System.out.println(bool4 ? "삭제성공":"삭제실패"); // dir 안에 파일이 있으면 삭제 불가
 
 

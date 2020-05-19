@@ -1,8 +1,4 @@
-package lecture.day0518SetMap;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+package lecture.day13SetMap;
 
 /*
  	Wrapper Class(기본자료형 8가지 -> 참조자료형)    java.lang

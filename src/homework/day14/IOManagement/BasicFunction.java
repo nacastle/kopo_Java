@@ -7,12 +7,13 @@ import java.util.Date;
 
 public class BasicFunction {
 
-    public static String IOpath = "iotest\\"; // 기본 경로 설정
-    public static File dir = new File(IOpath);
+    public static final String highestPath = "iotest\\";
+    public static String IOpath = highestPath; // 기본 경로 설정
+    public static File dir = new File(highestPath);
 
     public static void showHead() {
         System.out.println("===================================================================================================\n" +
-                "                                      폴더 정보\n" +
+                "                                             폴더 정보\n" +
                 "===================================================================================================\n" +
                 "이름                       종류                      크기(byte)                        마지막수정날짜\n" +
                 "===================================================================================================\n");

@@ -53,6 +53,7 @@ public class Post {
     }*/
 
 
+/*
     @Override
     public String toString() {
         return
@@ -61,6 +62,7 @@ public class Post {
                 postWriter+ "  " +
                 postDate;
     }
+*/
 
     public Post() {
 
@@ -71,8 +73,8 @@ public class Post {
         this.postTitle = postTitle;
         this.postWriter = postWriter;
 
-        Date date = new Date();
         SimpleDateFormat postFormat = new SimpleDateFormat( "yyyy-MM-dd HH:mm");
+        Date date = new Date();
         String postDate = postFormat.format(date);
 
         this.postDate = postDate;

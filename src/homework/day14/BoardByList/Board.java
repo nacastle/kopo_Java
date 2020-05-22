@@ -1,4 +1,4 @@
-package homework.day14.BoardList;
+package homework.day14.BoardByList;
 
 // 죄송합니다 교수님...코드가 좀 많이 더럽습니다...나중에 같은 실수를 하지 않으려고 일부러 틀린 코드들에 대한 흔적을 남겨놨습니다.
 

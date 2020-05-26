@@ -1,6 +1,6 @@
 package lecture.day15;
 
-import lecture.util.FileClose;
+import lecture.day14IO.util.FileClose;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

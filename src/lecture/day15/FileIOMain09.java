@@ -1,7 +1,5 @@
 package lecture.day15;
 
-import lecture.util.FileClose;
-
 import java.io.*;
 
 public class FileIOMain09 {

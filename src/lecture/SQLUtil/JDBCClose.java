@@ -5,23 +5,23 @@ import java.sql.Statement;
 
 public class JDBCClose {
 
-	public static void close(Connection conn, Statement st) {
-		
-		if(st != null) {
-			try {
-			st.close();
-			} catch(Exception e) {
-			e.printStackTrace();
-		}
-		if(conn != null) {
-			try {
-			conn.close();
-			} catch(Exception e) {
-			e.printStackTrace();
-		}
+    public static void close(Connection conn, Statement st) {
 
-		
-	}
-		}
-	}
+        if (st != null) {
+            try {
+                st.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            if (conn != null) {
+                try {
+                    conn.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+
+            }
+        }
+    }
 }

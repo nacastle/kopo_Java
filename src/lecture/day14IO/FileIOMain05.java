@@ -1,6 +1,6 @@
 package lecture.day14IO;
 
-import lecture.util.FileClose;
+import lecture.day14IO.util.FileClose;
 
 import java.io.*;
 

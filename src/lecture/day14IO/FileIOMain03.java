@@ -10,7 +10,7 @@ public class FileIOMain03 {
         DataOutputStream dos = null;
 
         try {
-            fos = new FileOutputStream("iotest\\data_writer.txt"); // 1바이트씩 읽어옴
+            fos = new FileOutputStream("iotest\\data_writer2.txt"); // 1바이트씩 읽어옴
             dos = new DataOutputStream(fos); // 이거 없으면 1바이트로만 읽음
 
             char c = 'A';

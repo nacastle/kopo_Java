@@ -32,8 +32,8 @@ public class FileIOMain02 {
 
         try {
             //1단계: 스트림 open
-            fis = new FileInputStream("iotest\\disney.png"); // 인풋
-            fos = new FileOutputStream("iotest\\disney2.png"); // 아웃풋
+            fis = new FileInputStream("iotest\\disney2.png"); // 인풋
+            fos = new FileOutputStream("iotest\\disney3.png"); // 아웃풋
 
             // filterclass 인 BufferedInputStream, BufferedOutputStream 객체 생성
             bis = new BufferedInputStream(fis);

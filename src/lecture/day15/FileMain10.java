@@ -74,7 +74,7 @@ public class FileMain10 {
 
     public static void main(String[] args) {
 
-//		write();
+		write();
         read();
 
     }

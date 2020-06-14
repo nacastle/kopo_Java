@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class No01 {
 
     public static void main(String[] args) {
+//        C:\Users\Na\IdeaProjects\kopoReal\src\homework\day03\No01.java
 
         Scanner sc = new Scanner(System.in);
         System.out.println("정수 3개를 입력하세요 :");
